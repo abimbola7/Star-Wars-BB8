@@ -17,6 +17,7 @@ center{
     animation-duration: 3s;
     animation-timing-function: linear;
     transform-origin: 50% 200px;
+    animation-delay: 2s;
     background-image: linear-gradient(to bottom, #e7e7cf 13%, #6868f1 13% 18%, #e7e7cf 18% 32%, orangered 32% 37%, #e7e7cf 37% 60%, orangered 60% 69%, #e7e7cf 69% 75%, #6868f1 75% 83%, #e7e7cf 83% 89%, grey 89%);
 }
 
@@ -131,6 +132,7 @@ center{
     border-radius: 100%;
     z-index: -100001;
     top: -5px;
+    animation-delay: 2s;
     animation-name: body;
     animation-duration:1s;
     animation-iteration-count: infinite;
@@ -233,7 +235,7 @@ center{
     position: relative;
     z-index: -1000000;
     animation-name: shadow;
-    animation-duration: .75s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
 }
 
@@ -242,6 +244,7 @@ center{
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-delay: 2s;
 }
 
 @keyframes move {
@@ -323,5 +326,14 @@ center{
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes shadow {
+    10%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(1);
     }
 }
