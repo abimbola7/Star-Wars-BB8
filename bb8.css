@@ -1,3 +1,7 @@
+body { 
+    overflow: hidden;
+}
+
 
 center{
     padding-top: 200px;
